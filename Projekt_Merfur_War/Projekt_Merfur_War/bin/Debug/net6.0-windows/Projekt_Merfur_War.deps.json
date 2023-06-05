@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Projekt_Merfur_War/1.0.0": {
+        "dependencies": {
+          "LibCharacters": "1.0.0"
+        },
+        "runtime": {
+          "Projekt_Merfur_War.dll": {}
+        }
+      },
+      "LibCharacters/1.0.0": {
+        "runtime": {
+          "LibCharacters.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Projekt_Merfur_War/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibCharacters/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

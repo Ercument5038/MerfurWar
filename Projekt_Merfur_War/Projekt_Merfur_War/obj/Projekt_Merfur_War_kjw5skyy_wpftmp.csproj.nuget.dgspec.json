@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\Projekt_Merfur_War\\Projekt_Merfur_War.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\LibCharacters\\LibCharacters.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\LibCharacters\\LibCharacters.csproj",
+        "projectName": "LibCharacters",
+        "projectPath": "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\LibCharacters\\LibCharacters.csproj",
+        "packagesPath": "C:\\Users\\ercu2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\LibCharacters\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ercu2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\Projekt_Merfur_War\\Projekt_Merfur_War.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\Projekt_Merfur_War\\Projekt_Merfur_War.csproj",
+        "projectName": "Projekt_Merfur_War",
+        "projectPath": "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\Projekt_Merfur_War\\Projekt_Merfur_War.csproj",
+        "packagesPath": "C:\\Users\\ercu2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\Projekt_Merfur_War\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ercu2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\LibCharacters\\LibCharacters.csproj": {
+                "projectPath": "C:\\Users\\ercu2\\OneDrive - HTL-Rankweil\\Dokumente\\22 23\\FSST\\Projekt\\Projekt_Merfur_War\\LibCharacters\\LibCharacters.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
