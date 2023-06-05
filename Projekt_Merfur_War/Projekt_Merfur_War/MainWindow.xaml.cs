@@ -45,7 +45,7 @@ namespace Projekt_Merfur_War
             player = new Player(WorldCanvas, CameraCanvas);
             enemy = new Enemy(WorldCanvas, player);
 
-            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Interval = TimeSpan.FromSeconds(1/60);
             timer.Tick += Timer_Tick;
             timer.Start();
             //enemy.Update();
@@ -55,31 +55,68 @@ namespace Projekt_Merfur_War
         private void Timer_Tick(object? sender, EventArgs e)
         {
             enemy.Update();
+            player.Update();
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            switch (e.Key)
+            //switch (e.Key)
+            //{
+            //    case Key.Left:
+            //    case Key.A:
+            //        player.MoveLeft();
+            //        break;
+            //    case Key.Right:
+            //    case Key.D: 
+            //        player.MoveRight();
+            //        break;
+            //    case Key.Up:
+            //    case Key.W:
+            //        player.MoveUp();
+            //        break;
+            //    case Key.Down:
+            //    case Key.S:
+            //        player.MoveDown();
+            //        break;
+            //}
+
+            if (e.Key == Key.A) 
             {
-                case Key.Left:
-                case Key.A:
-                    player.MoveLeft();
-                    break;
-                case Key.Right:
-                case Key.D: 
-                    player.MoveRight();
-                    break;
-                case Key.Up:
-                case Key.W:
-                    player.MoveUp();
-                    break;
-                case Key.Down:
-                case Key.S:
-                    player.MoveDown();
-                    break;
+                player.leftPressed = true;
             }
+            if (e.Key == Key.D) 
+            {
+                player.rightPressed = true;
+            }
+            if (e.Key == Key.W)
+            {
+                player.upPressed = true;
+            }
+            if (e.Key == Key.S) 
+            {
+                player.downPressed = true;
+            }
+
         }
 
-        
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.A)
+            {
+                player.leftPressed = false;
+            }
+            if (e.Key == Key.D)
+            {
+                player.rightPressed = false;
+            }
+            if (e.Key == Key.W)
+            {
+                player.upPressed = false;
+            }
+            if (e.Key == Key.S)
+            {
+                player.downPressed = false;
+            }
+        }
     }
 }

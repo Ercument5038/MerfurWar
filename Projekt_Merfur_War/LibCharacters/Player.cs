@@ -3,6 +3,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
@@ -18,9 +19,18 @@ namespace LibCharacters
 
         private Point position = new Point(-250,-250);
 
-        private double speed = 20;
+        private double speed = 0.2;
 
         Rectangle body = new Rectangle();
+
+        public bool rightPressed { get; set; }
+
+        public bool leftPressed { get; set; }
+
+        public bool upPressed { get; set; }
+
+        public bool downPressed { get; set; } 
+
 
         public Player(Canvas gameCanvas, Canvas camCanvas)
         { 
@@ -92,6 +102,26 @@ namespace LibCharacters
             center.Y = position.Y + body.Height / 2;
             
             return center;
+        }
+
+        public void Update()
+        {
+            if (leftPressed && !rightPressed)
+            {
+                MoveLeft();
+            }
+            if (rightPressed && !leftPressed)
+            {
+                MoveRight();
+            }
+            if (upPressed && !downPressed)
+            {
+                MoveUp();
+            }
+            if (downPressed && !upPressed)
+            {
+                MoveDown();
+            }
         }
     }
 }
