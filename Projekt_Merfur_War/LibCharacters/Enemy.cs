@@ -20,6 +20,8 @@ namespace LibCharacters
 
         private double speed = 10;
 
+        private int wave;
+
         Rectangle body = new Rectangle();
 
         Player player;

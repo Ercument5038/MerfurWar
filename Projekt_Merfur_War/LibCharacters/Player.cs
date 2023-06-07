@@ -21,6 +21,14 @@ namespace LibCharacters
 
         private double speed = 0.2;
 
+        private int regeneration = 0;
+
+        private int healtPoints = 100;
+
+        private double damageMutliplier = 1;
+
+        private int highscore; // serialize and deserialize
+
         Rectangle body = new Rectangle();
 
         public bool rightPressed { get; set; }

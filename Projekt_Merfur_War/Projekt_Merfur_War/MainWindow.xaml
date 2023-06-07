@@ -5,10 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekt_Merfur_War"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1000" Width="1000" Loaded="Window_Loaded" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
-    <Canvas x:Name="CameraCanvas" >
+        Title="Merfur War" Height="500" Width="500" Loaded="Window_Loaded" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+    <Canvas x:Name="CameraCanvas" Background="LightCoral">
         <Canvas x:Name="WorldCanvas" Background="LightBlue" Height="1000" Width="1000" Canvas.Left="-250" Canvas.Top="-250">
 
         </Canvas>
+
+
+
+        <StackPanel HorizontalAlignment="Center" Canvas.Top="365
+                    " VerticalAlignment="Top" Canvas.Left="10">
+            <TextBlock x:Name="TextBlockHP" FontSize="20" Text="HP: "/>
+            <!--Später mit Icons machen-->
+            <TextBlock x:Name="TextBlockDamage" FontSize="20" Text="Damage: "/>
+            <TextBlock x:Name="TextBlockReg" FontSize="20" Text="Regeneration: "/>
+        </StackPanel>
+
+        <TextBlock x:Name="TextBlockHighscore" FontSize="20" Text="HighScore: " HorizontalAlignment="Left" Canvas.Left="10" VerticalAlignment="Top" Canvas.Top="10"/>
+        <TextBlock x:Name="TextBlockWelle" FontSize="20" Text="Welle " HorizontalAlignment="Center" Canvas.Left="10" VerticalAlignment="Top" Canvas.Top="37"/>
     </Canvas>
 </Window>

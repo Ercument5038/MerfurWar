@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.Timers;
 
 namespace Projekt_Merfur_War
 {
@@ -24,20 +25,21 @@ namespace Projekt_Merfur_War
     /// </summary>
     public partial class MainWindow : Window
     {
-        DispatcherTimer timer = new DispatcherTimer();  
+        DispatcherTimer dispatcherTimer = new DispatcherTimer();
         Player player;
         Enemy enemy;
 
         public MainWindow()
         {
             InitializeComponent();
+
+            StartWindow startWindow = new StartWindow();
+            startWindow.ShowDialog();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             StartGame();
-
-            //backgroundSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/bg.jpg"));
         }
 
         private void StartGame()
@@ -45,11 +47,9 @@ namespace Projekt_Merfur_War
             player = new Player(WorldCanvas, CameraCanvas);
             enemy = new Enemy(WorldCanvas, player);
 
-            timer.Interval = TimeSpan.FromSeconds(1/60);
-            timer.Tick += Timer_Tick;
-            timer.Start();
-            //enemy.Update();
-
+            dispatcherTimer.Interval = TimeSpan.FromSeconds(1/30);
+            dispatcherTimer.Tick += Timer_Tick;
+            dispatcherTimer.Start();
         }
 
         private void Timer_Tick(object? sender, EventArgs e)
@@ -60,26 +60,6 @@ namespace Projekt_Merfur_War
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            //switch (e.Key)
-            //{
-            //    case Key.Left:
-            //    case Key.A:
-            //        player.MoveLeft();
-            //        break;
-            //    case Key.Right:
-            //    case Key.D: 
-            //        player.MoveRight();
-            //        break;
-            //    case Key.Up:
-            //    case Key.W:
-            //        player.MoveUp();
-            //        break;
-            //    case Key.Down:
-            //    case Key.S:
-            //        player.MoveDown();
-            //        break;
-            //}
-
             if (e.Key == Key.A) 
             {
                 player.leftPressed = true;
@@ -96,7 +76,6 @@ namespace Projekt_Merfur_War
             {
                 player.downPressed = true;
             }
-
         }
 
         private void Window_KeyUp(object sender, KeyEventArgs e)

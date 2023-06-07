@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="15.jpg" />
+    <None Remove="pixel-background-games-concept-background-resizable-seamless-pattern-grass-vector.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\LibCharacters\LibCharacters.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="15.jpg" />
+    <Resource Include="pixel-background-games-concept-background-resizable-seamless-pattern-grass-vector.jpg" />
   </ItemGroup>
 
 </Project>

@@ -22,3 +22,5 @@ C:\Users\ercu2\OneDrive - HTL-Rankweil\Dokumente\22 23\FSST\Projekt\Projekt_Merf
 C:\Users\ercu2\OneDrive - HTL-Rankweil\Dokumente\22 23\FSST\Projekt\Projekt_Merfur_War\Projekt_Merfur_War\bin\Debug\net6.0-windows\LibCharacters.dll
 C:\Users\ercu2\OneDrive - HTL-Rankweil\Dokumente\22 23\FSST\Projekt\Projekt_Merfur_War\Projekt_Merfur_War\bin\Debug\net6.0-windows\LibCharacters.pdb
 C:\Users\ercu2\OneDrive - HTL-Rankweil\Dokumente\22 23\FSST\Projekt\Projekt_Merfur_War\Projekt_Merfur_War\obj\Debug\net6.0-windows\Projekt_Merfur_War.csproj.CopyComplete
+C:\Users\ercu2\OneDrive - HTL-Rankweil\Dokumente\22 23\FSST\Projekt\Projekt_Merfur_War\Projekt_Merfur_War\obj\Debug\net6.0-windows\StartWindow.g.cs
+C:\Users\ercu2\OneDrive - HTL-Rankweil\Dokumente\22 23\FSST\Projekt\Projekt_Merfur_War\Projekt_Merfur_War\obj\Debug\net6.0-windows\StartWindow.baml
