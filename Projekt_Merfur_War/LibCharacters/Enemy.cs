@@ -18,7 +18,7 @@ namespace LibCharacters
 
         private Vector vector = new Vector();
 
-        private double speed = 10;
+        private double speed = 0.1;
 
         private int wave;
 
@@ -56,8 +56,10 @@ namespace LibCharacters
         {
             
             //position.Offset(x, y);
-            vector.X += x;
-            vector.Y += y;
+
+            // Speed miteinbeziehen in die Bewegung
+            vector.X += x * speed;
+            vector.Y += y * speed;
 
             /*
             if (position.X < -250)
@@ -78,7 +80,8 @@ namespace LibCharacters
         {
             Vector Temp = new Vector();
 
-            Temp = GetCenter() - player.GetCenter();
+            // Vektor richtig berechnen (Spitze nach Schaft)
+            Temp = player.GetCenter() - GetCenter();
 
             Temp.Normalize();
             

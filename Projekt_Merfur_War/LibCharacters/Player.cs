@@ -17,7 +17,14 @@ namespace LibCharacters
 
         private Vector vector = new Vector();
 
+        // Damit deine Bewegung funktioniert bewegst du den GameCanvas
+        // Die Position für diese Bewegung ist genau invers zur Bewegung
+        // die dein Player eigentlich in der Welt macht => eigenes Property
+        // für die Position in der Welt
         private Point position = new Point(-250,-250);
+        // Position des Players in der Welt => diese für Berechnungen verwenden
+        // Anfangs Offset hier kompensieren
+        private Point positionWorld = new Point(480, 480);
 
         private double speed = 0.2;
 
@@ -67,6 +74,7 @@ namespace LibCharacters
         private void Move(double x, double y)
         {
             position.Offset(x, y);
+            positionWorld.Offset(-x, -y);
             /*
             if (position.X < -1750)
                 position = new Point(-1750, position.Y);
@@ -78,7 +86,7 @@ namespace LibCharacters
                 position = new Point(position.X, background.ActualHeight - 45);
             */
             // keine abgrenzung  also bg left and top kann außerhalb sein
-            
+
             Canvas.SetLeft(gameCanvas, position.X);
             Canvas.SetTop(gameCanvas, position.Y);
         }
@@ -106,8 +114,9 @@ namespace LibCharacters
         public Vector GetCenter()
         {
             Vector center = new Vector();
-            center.X = position.X + body.Width / 2;
-            center.Y = position.Y + body.Height / 2;
+            // Weltkoordinaten des Players verwenden
+            center.X = positionWorld.X + body.Width / 2;
+            center.Y = positionWorld.Y + body.Height / 2;
             
             return center;
         }
